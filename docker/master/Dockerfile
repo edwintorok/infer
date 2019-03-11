@@ -38,7 +38,7 @@ RUN curl -sL https://github.com/ocaml/opam/releases/download/2.0.2/opam-2.0.2-x8
 
 # Disable sandboxing
 # Without this opam fails to compile OCaml for some reason. We don't need sandboxing inside a Docker container anyway.
-RUN opam init --reinit --bare --disable-sandboxing
+RUN opam init -y --reinit --bare --disable-sandboxing
 
 # Download the latest Infer master
 RUN cd / && \
