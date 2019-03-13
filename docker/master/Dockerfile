@@ -1,4 +1,4 @@
-FROM debian:testing-slim
+FROM debian:stretch-slim
 
 LABEL maintainer "Infer team"
 
